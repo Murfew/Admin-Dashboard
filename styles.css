@@ -72,9 +72,10 @@ body {
 }
 
 .main-content {
-  background-color: #f2f3f4;
+  background-color: #dae2eb;
   display: grid;
-  grid-template: repeat(2, 1fr) / 3.5fr 1fr;
+  grid-template: repeat(2, max-content) / 3.5fr 1fr;
+  padding: 20px 20px 30px 20px;
 }
 
 .projects {
@@ -84,8 +85,60 @@ body {
 
 .announcements {
   grid-column: 2;
+  margin-bottom: 20px;
 }
 
 .trending {
   grid-column: 2;
+}
+
+.content {
+  background-color: #ffffff;
+}
+
+.projects ~ div h2 {
+  font-size: 1.2em;
+}
+
+.announcement h3 {
+  font-size: 1em;
+}
+
+.announcements p {
+  font-size: 0.8em;
+}
+
+.trending .content {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr 2fr;
+  row-gap: 15px;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.trending .content .material-symbols-outlined {
+  place-self: center;
+  font-size: 40px;
+}
+
+.main-content h2 {
+  margin-bottom: 7px;
+}
+
+.announcements .content {
+  padding: 15px 25px 15px;
+  border-radius: 5px;
+}
+
+.announcements .content h3 {
+  margin-top: 10px;
+}
+
+.announcements .content div:not(:last-child) {
+  border-bottom: 1px solid darkgray;
+}
+
+.announcements .content p {
+  margin-bottom: 10px;
 }
