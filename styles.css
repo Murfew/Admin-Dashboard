@@ -9,6 +9,10 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+p {
+  color: rgb(76, 69, 69);
+}
+
 .header {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
   grid-area: 1 / 2 / 1 / 2;
@@ -96,7 +100,7 @@ body {
   background-color: #ffffff;
 }
 
-.projects ~ div h2 {
+.main-content h2 {
   font-size: 1.2em;
 }
 
@@ -115,6 +119,7 @@ body {
   border-radius: 5px;
   padding-top: 15px;
   padding-bottom: 15px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 .trending .content .material-symbols-outlined {
@@ -129,6 +134,7 @@ body {
 .announcements .content {
   padding: 15px 25px 15px;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 .announcements .content h3 {
@@ -141,4 +147,50 @@ body {
 
 .announcements .content p {
   margin-bottom: 10px;
+}
+
+.trending .content div {
+  font-size: 0.8em;
+}
+
+.projects .content {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 25px;
+  background-color: inherit;
+}
+
+.project {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  display: grid;
+  grid-template: 1fr 1.5fr 1fr / 1fr 40fr;
+}
+
+.projects {
+  padding-right: 20px;
+}
+
+.project .overlay {
+  grid-column: 1;
+  grid-row: span 3;
+  background-color: #ffe37a;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.project .material-symbols-outlined {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.project *:not(.overlay) {
+  padding: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
 }
