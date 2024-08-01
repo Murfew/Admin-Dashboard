@@ -12,6 +12,7 @@ body {
 .header {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
   grid-area: 1 / 2 / 1 / 2;
+  z-index: 1;
 }
 
 .sidebar {
@@ -48,12 +49,14 @@ body {
   display: grid;
   grid-template: repeat(6, max-content) / 1fr 3fr;
   row-gap: 10px;
+  align-items: center;
 }
 
 .extra {
   display: grid;
   grid-template: repeat(3, max-content) / 1fr 3fr;
   row-gap: 10px;
+  align-items: center;
 }
 
 .sidebar span {
@@ -66,4 +69,23 @@ body {
 
 .top > span {
   font-size: 36px;
+}
+
+.main-content {
+  background-color: #f2f3f4;
+  display: grid;
+  grid-template: repeat(2, 1fr) / 3.5fr 1fr;
+}
+
+.projects {
+  grid-column: 1;
+  grid-row: span 2;
+}
+
+.announcements {
+  grid-column: 2;
+}
+
+.trending {
+  grid-column: 2;
 }
