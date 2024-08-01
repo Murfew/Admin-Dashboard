@@ -110,7 +110,7 @@ body {
 
 .trending .content {
   display: grid;
-  grid-template: repeat(4, 1fr) / 1fr 2fr;
+  grid-template: repeat(3, 1fr) / 1fr 2fr;
   row-gap: 15px;
   border-radius: 5px;
   padding-top: 15px;
